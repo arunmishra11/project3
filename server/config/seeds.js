@@ -24,7 +24,7 @@ db.once('open', async () => {
       image: 'veggie.jpeg',
       category: categories[0]._id,
       price: 17.99,
-      quantity: 500
+      quantity: 50
     },
     {
       name: 'Oregano Pizza',
@@ -33,7 +33,7 @@ db.once('open', async () => {
       image: 'oregano.jpeg',
       category: categories[0]._id,
       price:18.99,
-      quantity: 500
+      quantity: 50
     },
     {
       name: 'Crazy Pepperoni',
@@ -95,7 +95,7 @@ db.once('open', async () => {
       description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
       image: 'pepperoni-with-pepper.jpeg',
       price: 19.99,
-      quantity: 1000
+      quantity: 100
     },
     {
       name: 'Four Seasons',
@@ -104,7 +104,7 @@ db.once('open', async () => {
         'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
       image: 'four-seasons',
       price: 20.99,
-      quantity: 1000
+      quantity: 100
     },
     {
       name: 'Mexican',
@@ -122,7 +122,7 @@ db.once('open', async () => {
         'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
       image: 'shrimp-pine.png',
       price: 21.99,
-      quantity: 600
+      quantity: 60
     }
   ]);
 
