@@ -102,7 +102,7 @@ db.once('open', async () => {
       category: categories[4]._id,
       description:
         'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
-      image: 'four-seasons',
+      image: 'four-seasons.jpeg',
       price: 20.99,
       quantity: 100
     },

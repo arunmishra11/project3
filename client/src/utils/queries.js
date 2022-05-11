@@ -9,7 +9,6 @@ export const QUERY_PRODUCTS = gql`
       price
       quantity
       image
-      ingredients
       category {
         _id
       }
