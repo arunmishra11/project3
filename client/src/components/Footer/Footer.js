@@ -22,7 +22,7 @@ const Footer = () => {
         {/* middle */}
         <div className="card1 px-1 py-1">
           <div className ='middle'>
-            <h5>Have your favourite Pizza</h5>           
+            <h5>Thank you for shopping</h5>           
           </div>
         </div>
         
