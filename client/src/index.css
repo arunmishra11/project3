@@ -199,12 +199,20 @@ input:focus {
   text-align: center;
 }
 
+.card1{
+  width: 32%;
+  text-align: center;
+}
+
 .error-text {
   color: var(--error);
 }
 
 @media screen and (max-width: 768px) {
   .card {
+    width: 100%;
+  }
+  .card1 {
     width: 100%;
   }
 }
