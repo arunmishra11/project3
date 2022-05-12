@@ -46,7 +46,7 @@ db.once('open', async () => {
     },
     {
       name: 'Sweet and Sour Chicken',
-      category: categories[4]._id,
+      category: categories[3]._id,
       description:
         'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
       image: 'sweet-sour-chicken.jpeg',
