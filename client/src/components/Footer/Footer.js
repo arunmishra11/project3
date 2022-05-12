@@ -1,25 +1,28 @@
 import React, { useState} from 'react'
+import { useMutation } from '@apollo/client';
+import { ADD_NEWSLETTER } from '../../utils/mutations';
+
 
 import './Footer.css'
 
 
 const Footer = () => {
-  const [email, setName] = useState('');
-
-
+  const [name, setName] = useState('');
+  console.log('name', name)
+  const [addNewsletter] = useMutation(ADD_NEWSLETTER);
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
+    await addNewsletter({
+      variables: {
+        email: name,
+      },
 
+    });
+    setName('');
+  }
     
-
-      setName('');
-    } 
-  
-
-
-
-
+    
   return (
   <div className='footer-container'>
     <div className = 'flex-row'>          
@@ -34,7 +37,7 @@ const Footer = () => {
                   onSubmit={handleFormSubmit}
               >
               <input className='input-box' placeholder='Email *' type="email" 
-              value={email} onChange={(event) => setName(event.target.value)} />
+              value={name} onChange={(event) => setName(event.target.value)} />
               <div>
                 <button className='footer-button' type="submit">Subscribe</button> 
               </div>

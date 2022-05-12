@@ -1,7 +1,8 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Product, Category, Order } = require('../models');
+const { User, Product, Category, Order, Newsletter } = require('../models');
 const { signToken } = require('../utils/auth');
-const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+const stripe = require('stripe')(process.env.REACT_APP_SERVER_KEY);
+//const stripe = require('stripe')("sk_test_51Kuw0eLcEVUvvX357YSXj8fcxzQLNWuTBBF2ioTrBzeWVQXIjsm3EiOPZq0dDWZ4fBggqmW5wKOLcphiLExKCmKJ00Afh5WMrG");
 
 const resolvers = {
   Query: {
@@ -53,6 +54,7 @@ const resolvers = {
       throw new AuthenticationError('Not logged in');
     },
     checkout: async (parent, args, context) => {
+      console.log("resolvers checkout")
       const url = new URL(context.headers.referer).origin;
       const order = new Order({ products: args.products });
       const line_items = [];
@@ -65,27 +67,32 @@ const resolvers = {
           description: products[i].description,
           images: [`${url}/images/${products[i].image}`]
         });
-
+        console.log("before strip.prices.create")
+        console.log("prduct.id", product.id);
+        console.log("unit_amount", Math.round(products[i].price * 100))
         const price = await stripe.prices.create({
           product: product.id,
-          unit_amount: products[i].price * 100,
-          currency: 'usd',
+          unit_amount: parseInt(Math.round(products[i].price * 100)),
+          currency: 'aud',
         });
+        console.log("after strip.prices.create price: ", price)
 
         line_items.push({
           price: price.id,
           quantity: 1
         });
       }
+      console.log("for loop prouct is finished")
 
-      const session = await stripe.checkout.sessions.create({
+       const session = await stripe.checkout.sessions.create({
         payment_method_types: ['card'],
         line_items,
         mode: 'payment',
         success_url: `${url}/success?session_id={CHECKOUT_SESSION_ID}`,
         cancel_url: `${url}/`
       });
-
+      
+      console.log("session is called",session);
       return { session: session.id };
     }
   },
@@ -96,6 +103,14 @@ const resolvers = {
 
       return { token, user };
     },
+    addNewsletter: async (parent, args) => {
+      console.log(`addNewsletter args ${JSON.stringify(args)}`)
+      const newsletter = await Newsletter.create(args);
+      console.log(`newsletter ${newsletter}`)
+      return { newsletter};  
+    },
+
+
     addOrder: async (parent, { products }, context) => {
       console.log(context);
       if (context.user) {

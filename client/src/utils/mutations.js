@@ -49,3 +49,11 @@ export const ADD_USER = gql`
     }
   }
 `;
+export const ADD_NEWSLETTER = gql`
+mutation addNewsletter($email: String!) {
+  addNewsletter(email: $email) {
+    _id
+    email
+  }
+}
+`;

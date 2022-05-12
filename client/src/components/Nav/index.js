@@ -42,7 +42,7 @@ function Nav() {
   return (
     <header className="flex-row px-1">
       <h1>
-        <Link to="/">
+        <Link to="/"  onClick={() => window.location.reload()}>
           <span role="img" aria-label="pizza delight">🍕</span>
           Pizza Delight
         </Link>

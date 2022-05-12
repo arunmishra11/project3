@@ -30,6 +30,11 @@ const typeDefs = gql`
     orders: [Order]
   }
 
+  type Newsletter{
+    _id: ID
+    email: String
+      }
+
   type Checkout {
     session: ID
   }
@@ -54,6 +59,7 @@ const typeDefs = gql`
     updateUser(firstName: String, lastName: String, email: String, password: String): User
     updateProduct(_id: ID!, quantity: Int!): Product
     login(email: String!, password: String!): Auth
+    addNewsletter(email: String!): Newsletter
   }
 `;
 
