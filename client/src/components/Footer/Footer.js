@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useState} from 'react'
+
 import './Footer.css'
 
 
 const Footer = () => {
+  const [email, setName] = useState('');
+
+
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+
+    
+
+      setName('');
+    } 
+  
+
+
+
+
   return (
   <div className='footer-container'>
     <div className = 'flex-row'>          
@@ -12,10 +29,16 @@ const Footer = () => {
             <h3>OUR NEWSLETTER</h3>
               <p className='newsLetter-p'>Subscribe to our newsletter to receive special offers and updates on new products</p>
               {/* <p>Email *</p> */}
-              <input className='input-box' placeholder='Email *' type="email" />
+              <form
+                  className="flex-row justify-center justify-space-between-md align-center"
+                  onSubmit={handleFormSubmit}
+              >
+              <input className='input-box' placeholder='Email *' type="email" 
+              value={email} onChange={(event) => setName(event.target.value)} />
               <div>
-                <button className='footer-button'>Subscribe</button> 
-              </div>  
+                <button className='footer-button' type="submit">Subscribe</button> 
+              </div>
+              </form>  
             </div>      
         </div>
         
