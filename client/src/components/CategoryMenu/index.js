@@ -54,7 +54,7 @@ function CategoryMenu() {
           {item.name}
         </button>
       ))}
-      <button onClick={() => window.location.reload()}>All Products</button>
+      <button onClick={() => window.location.reload()}>All</button>
     </div>
   );
 }
