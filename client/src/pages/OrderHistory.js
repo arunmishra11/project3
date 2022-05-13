@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import { useQuery } from '@apollo/client';
 import { QUERY_USER } from '../utils/queries';
-import Footer from "./components/Footer/Footer";
 
 function OrderHistory() {
   const { data } = useQuery(QUERY_USER);
