@@ -1,0 +1,20 @@
+.flex-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .flex-item-left1 {  
+    flex: 50%;
+  }
+  
+  .flex-item-right1 {
+    flex: 50%;
+  }
+
+  @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  }
