@@ -1,0 +1,19 @@
+svg {
+    margin-right: 8px;
+    transform: rotate(180deg);
+}
+
+  svg  .rotated {
+      transform: rotate(0);
+    }
+
+    select#product-sort {
+        border-color: var(--secondary);
+    }
+
+
+    
+
+
+
+

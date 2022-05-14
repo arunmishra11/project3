@@ -53,7 +53,7 @@ function sort(e){
 
             <select onChange={sort} id="product-sort">
                 {options.map((item) => (
-                    <option value={item.value}>{item.title}</option>
+                    <option key={item.title} value={item.value}>{item.title}</option>
                 ))}
             </select>
 
