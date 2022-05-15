@@ -1,20 +1,20 @@
-.flex-container1 {
+.menu-container {
     display: flex;
     flex-wrap: wrap;
     font-size: 30px;
-    text-align: center;
+    
   }
   
   .flex-item-left1 {  
-    flex: 50%;
+    flex: 62%;
   }
   
   .flex-item-right1 {
-    flex: 50%;
+    flex: 38%;
   }
 
   @media (max-width: 800px) {
-    .flex-item-right, .flex-item-left {
+    .flex-item-right1, .flex-item-left1 {
       flex: 100%;
     }
   }

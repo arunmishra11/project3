@@ -3,17 +3,8 @@ svg {
   transform: rotate(180deg);
 }
 .sort {
-  margin-top: 15px;
-}
-
-b {
-  margin-right: 8px;
-}
-
-span {
-  color: orange;
-  border-bottom: 1px dashed orange;
-  cursor: pointer;
+  margin-top: 55px;
+  font-size: 25px;
 }
 
 select {
@@ -24,11 +15,12 @@ select {
   overflow: hidden;
   padding: 10px 0;
   overflow: hidden;
-  padding: 12px 20px;
+  padding: 10px 20px;
   cursor: pointer;
   font-weight: bold;
   color: orange;
   display: inline-block;
+  margin-left: 5px;
 }
 
 option {

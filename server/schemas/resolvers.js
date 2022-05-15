@@ -68,8 +68,8 @@ const resolvers = {
           images: [`${url}/images/${products[i].image}`]
         });
         console.log("before strip.prices.create")
-        console.log("prduct.id", product.id);
-        console.log("unit_amount", Math.round(products[i].price * 100))
+       // console.log("prduct.id", product.id);
+       // console.log("unit_amount", Math.round(products[i].price * 100))
         const price = await stripe.prices.create({
           product: product.id,
           unit_amount: parseInt(Math.round(products[i].price * 100)),
@@ -82,7 +82,7 @@ const resolvers = {
           quantity: 1
         });
       }
-      console.log("for loop prouct is finished")
+      // console.log("for loop prouct is finished")
 
        const session = await stripe.checkout.sessions.create({
         payment_method_types: ['card'],
@@ -92,7 +92,7 @@ const resolvers = {
         cancel_url: `${url}/`
       });
       
-      console.log("session is called",session);
+      // console.log("session is called",session);
       return { session: session.id };
     }
   },
