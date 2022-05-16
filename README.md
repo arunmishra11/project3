@@ -8,7 +8,7 @@
 
 💻 Below is a screenshot of the application:
 
-![Pizza-Delight](./public/images/homepage.png)
+![Pizza-Delight](././public/images/homepage.png)
 
 ## Table of Contents
 - [Description](#description)
