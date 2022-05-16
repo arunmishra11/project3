@@ -22,7 +22,7 @@
 - [Learn More](#learn-more)
   - [`Code Splitting`](#code-splitting)
   - [`Analyzing the Bundle Size`](#analyzing-the-bundle-size)
-  - [`Making a Progressive Web App`](#making a-progressive-web-app)
+  - [`Making a Progressive Web App`](#making-a-progressive-web-app)
   - [`Advanced Configuration`](#advanced-configuration)
   - [`Deployment`](#Deployment)
 - [Contributing](#contributing)
@@ -49,6 +49,22 @@ THEN I find that the app uses Redux instead of the Context API
 WHEN I review the way the app dispatches actions
 THEN I find that the app uses Redux instead of the Context API
 ``` 
+
+## <img id="built_using" src="https://github.com/teamjuli0/readme-badges/blob/main/themes/clean-dark/menu-categories/built-using.png?raw=true" style="height: 40px">
+
+- MongoDB
+- Mongoose
+- GraphQL
+- Express.js
+- Node.js
+- Bcrypt
+- JWT
+- Stripe
+- React
+- CSS
+- Bootstrap
+- JavaScript
+- React Star Ratings
 
 ## Available Scripts
 
