@@ -4,7 +4,7 @@
 
 🔍 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). MERN full stack Application.
 
-**[Deployed Application]**
+**[Deployed Application](https://pizza-delight.herokuapp.com/)**
 
 💻 Below is a screenshot of the application:
 
