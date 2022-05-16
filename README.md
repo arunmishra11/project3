@@ -70,6 +70,8 @@ THEN I find that the app uses Redux instead of the Context API
 ## Installation
 To install the dependencies for this project, the user simply needs to clone the repository and then run the command "npm install". This will install all necessary dependencies since they are all included in the package.json. 
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -135,7 +137,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-
+**[⬆ back to top](#table-of-contents)**
 
 ## Contributing
 :octocat: [Sorna Kesavan](https://github.com/alsornak)
