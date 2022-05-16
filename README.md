@@ -14,6 +14,8 @@
 - [Description](#description)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
+- [Technology Used](#technology-used)
+- [Installation](#installation)
 - [Available Scripts](#available-scripts)
   - [`npm start`](#npm-start)
   - [`npm test`](#npm-test)
@@ -49,8 +51,9 @@ THEN I find that the app uses Redux instead of the Context API
 WHEN I review the way the app dispatches actions
 THEN I find that the app uses Redux instead of the Context API
 ``` 
+**[⬆ back to top](#table-of-contents)**
 
-## <img id="built_using" src="https://github.com/teamjuli0/readme-badges/blob/main/themes/clean-dark/menu-categories/built-using.png?raw=true" style="height: 40px">
+## Technology Used
 
 - MongoDB
 - Mongoose
@@ -62,9 +65,10 @@ THEN I find that the app uses Redux instead of the Context API
 - Stripe
 - React
 - CSS
-- Bootstrap
 - JavaScript
-- React Star Ratings
+
+## Installation
+To install the dependencies for this project, the user simply needs to clone the repository and then run the command "npm install". This will install all necessary dependencies since they are all included in the package.json. 
 
 ## Available Scripts
 
@@ -102,6 +106,8 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Learn More
 
