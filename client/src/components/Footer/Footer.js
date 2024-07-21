@@ -56,7 +56,7 @@ const Footer = () => {
         <div className="card1 px-1 py-1">  
           <div className='right'>      
             <h3>CONTACT</h3>
-            <p>12th cross street, Melbourne</p>
+            <p>1234 cross street, Crossings, Cross,Earth</p>
             <p>pizza@myweb.com</p>
             <p> 123-456-7890</p>  
           </div>     
